@@ -1,8 +1,14 @@
 document.getElementById('btn-deposit').addEventListener('click', function(){
     // console.log('clicked');
     const depositField = document.getElementById('deposit-field');
-    const newDepositAmount = depositField.value;
+    const newDepositAmount = parseFloat(depositField.value) ;
     // console.log(depositAmount);
+
+    if (isNaN(newDepositAmount)) {
+        alert('Please enter a valid number');
+        depositField.value = '';
+        return;
+    }
 
     // setting the value to the deposit section
     const depositTotalElement = document.getElementById('deposit-total');
