@@ -8,9 +8,9 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     const password = passwordField.value;
 
     if(email === 'admin@gmail.com' && password === 'secret'){
-        console.log('valid user');
+        window.location.href = 'bank.html';
     }
     else{
-        console.log('Invalid User');
+        alert('Invalid User');
     }
 })
