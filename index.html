@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Bank with JS</title>
 
+    <style>
+        main{
+            display: flex;
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,11 +21,11 @@
         <h1 class="text-5xl text-center mt-6">Welcome to simple <span class="font-semibold text-violet-600">Bank with JS</span></h1>
     </header>
     <main>
-        <section class="bg-blue-100 w-9/12 mx-auto mt-12 p-8">
+        <section class="bg-blue-100 w-1/2 mx-auto mt-12 p-8 text-center">
             <h3 class="text-3xl mb-4 font-medium">Please Login</h3>
             <div>
-                <input id="user-email" class="w-9/12 block mb-2 px-2 rounded-sm" type="email" placeholder="Your email address">
-                <input class="w-9/12 block mb-2 px-2 rounded-sm" type="password" name="" id="user-password" placeholder="Your password">
+                <input id="user-email" class="w-72 block mb-2 px-2 rounded-sm  mx-auto" type="email" placeholder="Your email address">
+                <input class="w-72 block mb-2 px-2 rounded-sm mx-auto" type="password" name="" id="user-password" placeholder="Your password">
                 <button id="btn-submit" class="bg-amber-600 hover:bg-amber-700 px-4 py-2 text-white rounded-lg">Submit</button>
             </div>
         </section>
